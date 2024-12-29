@@ -415,7 +415,9 @@ const filterGreaterThanThresholdByMembership = function (
   criteria,
   threshold
 ) {
-  return numbers.filter((number) => criteria.includes(number) && number > threshold);
+  return numbers.filter(
+    (number) => criteria.includes(number) && number > threshold
+  );
 };
 
 // Filter strings from the first array that have a length greater than a specified value and are present in the second array
